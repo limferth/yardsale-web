@@ -5,7 +5,7 @@
     padding: 0;
 }
 :root{
-    --very-light-pink: #C7C7C7;
+    --very-light-pink: #615d5d;
     --text-input-field: #F7F7F7;
     --HOSPITAL-GREEN: #ACD9B2;
     --white: #FFFFFF;
@@ -26,6 +26,7 @@ html {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
+    justify-items: center
 }
 .login-container-logo {
     width: 150px;
@@ -43,6 +44,19 @@ html {
     text-align: center;
     color: var(--very-light-pink);
     font-weight: 300;
+}
+.email-container-image {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.email-container-image img {
+    width: 80px;
 }
 .login-container-form {
     display: grid;
@@ -73,9 +87,20 @@ font-size: 300;
     border-radius: 12px;
     border: none;
     color: var(--white);
-    padding: 8px 16px 8px 16px;
+    padding: 8px 54px 8px 54px;
     margin-top: 4px;
     cursor: pointer;
     font-size: 1.6rem;
     font-weight: 500;
+}
+.email-container-texEnd {
+    font-size: 1.4rem;
+    margin-top: 12px;
+}
+.email-container-texEnd span {
+    color: var(--very-light-pink);
+}
+.email-container-texEnd a {
+    color: var(--HOSPITAL-GREEN);
+    text-decoration: none;
 }

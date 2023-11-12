@@ -74,7 +74,7 @@ html {
 justify-content: center;
 align-items: center;
 margin-bottom: 14px;
-width: 100%;
+width: 300px;
 padding-left: 12px;
 background-color: var(--text-input-field);
 border: none;
@@ -85,6 +85,7 @@ font-size: 300;
 .login-container-form__button {
     background-color: var(--HOSPITAL-GREEN);
     border-radius: 12px;
+    width: 300px;
     border: none;
     color: var(--white);
     padding: 8px 54px 8px 54px;
@@ -103,4 +104,23 @@ font-size: 300;
 .email-container-texEnd a {
     color: var(--HOSPITAL-GREEN);
     text-decoration: none;
+}
+.email-container-forget {
+    color: var(--HOSPITAL-GREEN);
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 12px 0 50px 0;
+    text-decoration: none;
+
+}
+.email-container-button {
+background-color: var(--white);
+border-radius: 12px;
+height: 50px;
+width: 300px;
+color: var(--HOSPITAL-GREEN);
+border: 1px solid var(--HOSPITAL-GREEN);
+cursor: pointer;
+font-size: 1.8rem;
+margin-top: 150px;
 }

@@ -124,3 +124,8 @@ cursor: pointer;
 font-size: 1.8rem;
 margin-top: 150px;
 }
+.Value {
+    color: var(--very-light-pink);
+    font-size:1.6rem;
+    margin: 8px 0 32px 0;
+}

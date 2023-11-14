@@ -3,3 +3,16 @@
     display: block;
 }
 }
+@media (max-width: 640px) {
+    .main-container-card {
+        grid-template-columns: (auto-fill, 140px);
+        place-content: center;
+    }
+    .main-container-card__product {
+        width: 140px;
+    }
+    .main-container-card__product img {
+        width: 140px;
+        height: 140px;
+    }
+}

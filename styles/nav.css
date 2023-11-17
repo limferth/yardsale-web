@@ -14,3 +14,66 @@ html {
     font-size: 62.5%;
     font-family:'Quicksand', sans-serif;
 }
+.nav-container {
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+.nav-container-imagen {
+    display: none;
+}
+.nav-container-left {
+    display: flex;
+}
+.nav-container-left ul {
+    margin-left: 12px;
+}
+.nav-container-left img {
+    width: 150px;
+}
+.nav-container-left ul,
+.nav-container-right ul {
+    list-style: none;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+.nav-container-left ul li a,
+.nav-container-right ul li a {
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+}
+.nav-container-left ul li a:hover,
+.nav-container-right ul li a:hover {
+    text-decoration: none;
+    border: 1px solid var(--HOSPITAL-GREEN);
+    color: var(--HOSPITAL-GREEN);
+}
+
+.nav-container-right .nav-container-right__email {
+    color: var(--very-light-pink);
+    margin-right: 12px;
+}
+.nav-container-right__shopping {
+    position: relative;
+}
+.nav-container-right__shopping div {
+    width: 12px;
+    height: 12px;
+    background-color: var(--HOSPITAL-GREEN);
+    border-radius: 50%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    position: absolute;
+    top: -5px;
+    right: -4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

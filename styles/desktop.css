@@ -16,3 +16,14 @@
         height: 140px;
     }
 }
+@media (max-width: 640px) {
+    .nav-container-imagen {
+        display: block;
+    }
+    .nav-container-left ul {
+        display: none;
+    }
+    .nav-container-right__email {
+        display: none;
+    }
+}

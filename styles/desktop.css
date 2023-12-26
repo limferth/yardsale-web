@@ -26,4 +26,12 @@
     .nav-container-right__email {
         display: none;
     }
+    .desktop-menu {
+        display: none;
+    }
 }
+/* @media (min-width: 641px) {
+    .mobile-menu {
+        display: block;
+    }
+} */

@@ -32,9 +32,13 @@
     .order-container {
         width: 100%;
     }
+    .product-detail {
+        width: 100%;
+    }
 }
 /* @media (min-width: 641px) {
     .mobile-menu {
         display: block;
     }
 } */
+

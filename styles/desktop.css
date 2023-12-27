@@ -29,6 +29,9 @@
     .desktop-menu {
         display: none;
     }
+    .order-container {
+        width: 100%;
+    }
 }
 /* @media (min-width: 641px) {
     .mobile-menu {

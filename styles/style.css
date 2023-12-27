@@ -156,6 +156,115 @@ html {
     font-size: 1.2rem;
     color: var(--HOSPITAL-GREEN);
 }
+/* ESTILOS DE MY ORDERS */
+.order-container {
+    width: 300px;
+    height: auto;
+    background-color: var(--white);
+    position: absolute;
+    right: 0;
+}
+.order-container .order-container-product h1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.order-container-product {
+    display: grid;
+    grid-template-rows:auto 1fr auto;
+    width: 300px;
+}
+.order-container-product__content {
+    display: flex;
+    flex-direction: column;
+}
+.content-general {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    background-color: var(--text-input-field);
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 8px 24px;
+
+}
+.content-general p:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+.content-general p span:nth-child(1) {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.content-general p:nth-child(2) {
+    text-align: end;
+    font-weight: 500;
+}
+.content-general p span:nth-child(2) {
+    font-size: 1.2rem;
+    color: var(--very-light-pink);
+}
+.order-container-product__carts {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    align-items: center;
+    margin: 8px;
+}
+.order-container-product__carts figure {
+    margin: 0;
+}
+.order-container-product__carts p:nth-child(2) {
+    color: var(--very-light-pink);
+}
+.order-container-product__carts p:nth-child(3) {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.order-container-product__carts figure img {
+    width: 70px;
+    height: 70px;
+    object-fit:cover ;
+    border-radius: 10px;
+}
+/* lista de productos */
+.main-container-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 26px;
+    place-content: center;
+    margin-top: 20px;
+}
+.main-container-card__product {
+    width: 240px;
+}
+.main-container-card__product img {
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.product-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12px 0 4px 0;
+}
+.product-info figure img {
+    width: 35px;
+    height: 35px;
+}
+.product-info div p:nth-child(1){
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.product-info div p:nth-child(2){
+    font-size: 1.2rem;
+    margin: 0px 0 4px 4px;
+    color: var(--very-light-pink);
+}
+
  /* estilos de login  */
 .login {
     width: 100%;

@@ -6,6 +6,7 @@ const cardsContainer = document.querySelector('.main-container-card')
 const desktopMenu = document.querySelector('.desktop-menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 const aside = document.querySelector('.order-container');
+const productDetailContainer = document.querySelector('#productDetail');
 
 
 
@@ -37,11 +38,19 @@ function toggleCarritoAside () {
 
     const isMobileMenuClosed = mobileMenu.classList.contains('inactive');
     
-    // aside.classList.toggle('inactive')
     if(!isMobileMenuClosed) {
             mobileMenu.classList.add('inactive');
         }
     aside.classList.toggle('inactive');
+
+    const isDetailProductClosed = productDetailContainer.classList.contains('inactive');
+    
+    if(!isDetailProductClosed) {
+            productDetailContainer.classList.add('inactive');
+        }
+}
+function openProductDetailAside () {
+    productDetailContainer.classList.remove('.inactive');
 }
 
 const productList = [];
@@ -49,7 +58,7 @@ const productList = [];
 productList.push({
     name: 'bike',
     price: 156,
-    image: 'https://orvehogar.com/wp-content/uploads/2023/05/moto-ninja-z1-cobra.jpg',
+    image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmlrZXxlbnwwfHwwfHx8MA%3D%3D',
 });
 
 productList.push({
@@ -87,6 +96,7 @@ function rederProducts(arr) {
     
         const productImg = document.createElement('img');
         productImg.setAttribute('src', product.image);
+        productImg.addEventListener('click', openProductDetailAside);
     
         const productInfo = document.createElement('div');
         productInfo.classList.add('product-info');
